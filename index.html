@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกม XO ออนไลน์</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>เกม XO ออนไลน์</h1>
+        <div id="room-setup">
+            <button id="create-room">สร้างห้องใหม่</button>
+            <br><br>
+            <input type="text" id="room-code-input" placeholder="กรอกรหัสห้อง">
+            <button id="join-room">เข้าร่วมห้อง</button>
+        </div>
+
+        <div id="game-container" style="display: none;">
+            <h2 id="room-info">รหัสห้อง: -</h2>
+            <h3 id="status">กำลังรอผู้เล่น...</h3>
+            <h4 id="player-role">คุณคือผู้เล่น: -</h4>
+
+            <div class="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <button id="restart-btn" style="display: none;">เล่นใหม่อีกครั้ง</button>
+        </div>
+    </div>
+
+    <!-- เรียกใช้ Firebase SDK -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
